@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>Cs2Hvh.Engine</RootNamespace>
+    <AssemblyName>Cs2Hvh.Engine</AssemblyName>
+    <Description>Wallet orchestration, domain models, sync pipeline, validation.</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cryptography\Cryptography.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="9.0.0" />
+  </ItemGroup>
+</Project>
