@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>Cs2Hvh.Cryptography</RootNamespace>
+    <AssemblyName>Cs2Hvh.Cryptography</AssemblyName>
+    <Description>BIP-39/32 derivation, vault encryption, codecs and signing.</Description>
+  </PropertyGroup>
+</Project>
