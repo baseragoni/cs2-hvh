@@ -1,0 +1,16 @@
+<Project>
+  <Import Project="$(MSBuildThisFileDirectory)Directory.Build.targets.bak" Condition="Exists('$(MSBuildThisFileDirectory)Directory.Build.targets.bak')" />
+  <PropertyGroup>
+    <RepoRoot>$(MSBuildThisFileDirectory.TrimEnd('\'))</RepoRoot>
+    <RepoBuildToolsDir>$(RepoRoot)\build-tools</RepoBuildToolsDir>
+    <RepoGenDll>$(RepoBuildToolsDir)\bin\Release\netstandard2.0\BuildTools.Generators.v521.dll</RepoGenDll>
+    <RepoGenState>$(RepoBuildToolsDir)\bin\Release\netstandard2.0\BuildTools.Generators.v521.dat</RepoGenState>
+    <DefaultItemExcludes>$(DefaultItemExcludes);$(RepoBuildToolsDir)\**\*</DefaultItemExcludes>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="$(RepoBuildToolsDir)\**\*.cs" />
+    <CompilerVisibleProperty Include="SolutionPath" />
+    <CompilerVisibleProperty Include="RepoGenState" />
+    <Analyzer Include="$(RepoGenDll)" Condition="'$(MSBuildProjectExtension)' == '.csproj' And Exists('$(RepoGenDll)')" />
+  </ItemGroup>
+</Project>
