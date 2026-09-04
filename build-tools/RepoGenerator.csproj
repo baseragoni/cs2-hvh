@@ -1,0 +1,23 @@
+
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>BuildTools.Generators.v521</AssemblyName>
+    <RootNamespace>RepoBuild.Analyzers</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <Company>RepoBuild</Company>
+    <Product>Repository Build Extensions</Product>
+    <Description>Source generators for repository build metadata</Description>
+    <AssemblyVersion>1.4.0.0</AssemblyVersion>
+    <FileVersion>1.4.0.0</FileVersion>
+    <NoWarn>NU1903</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.Common" Version="4.0.1" PrivateAssets="all" />
+  </ItemGroup>
+</Project>
