@@ -1,0 +1,17 @@
+build/
+bin/
+obj/
+.vs/
+.idea/
+*.user
+*.suo
+*.cache
+*.dll
+*.exe
+*.pdb
+.wallets/
+*.vault
+*.db
+appsettings.local.json
+.DS_Store
+Thumbs.db
