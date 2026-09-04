@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>Cs2Hvh.Core</RootNamespace>
+    <AssemblyName>Cs2Hvh.Core</AssemblyName>
+  </PropertyGroup>
+</Project>
